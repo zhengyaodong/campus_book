@@ -3,6 +3,7 @@ from app import create_app
 from flask_cors import CORS  # 1. 导入 CORS
 
 app = create_app()
+print("CORS has been initialized!") # 加这行
 CORS(app, supports_credentials=True) # 2. 核心：允许跨域请求
 
 if __name__ == '__main__':
