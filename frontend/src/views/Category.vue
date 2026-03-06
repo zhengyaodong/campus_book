@@ -4,7 +4,7 @@
     <header class="header">
       <div class="container">
         <div class="header-left">
-          <router-link to="/" class="logo">📚 校园二手书</router-link>
+          <router-link to="/" class="logo">📚 广软二手书</router-link>
         </div>
         <div class="header-center">
           <el-input

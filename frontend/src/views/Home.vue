@@ -4,7 +4,7 @@
     <header class="header">
       <div class="container">
         <div class="header-left">
-          <router-link to="/" class="logo">📚 校园二手书</router-link>
+          <router-link to="/" class="logo">📚 广软二手书</router-link>
         </div>
         <div class="header-center">
           <el-input
@@ -58,6 +58,35 @@
         </router-link>
       </div>
     </nav>
+
+    <!-- Banner区域 -->
+    <div class="banner">
+      <div class="banner-content">
+        <div class="banner-text">
+          <h1>广州软件学院</h1>
+          <h2>校园二手交易平台</h2>
+          <p>让闲置书籍找到新主人，让校园生活更环保</p>
+          <div class="banner-actions">
+            <el-button type="primary" size="large" @click="$router.push('/publish')">发布书籍</el-button>
+            <el-button size="large" @click="$router.push('/category')">浏览书籍</el-button>
+          </div>
+        </div>
+        <div class="banner-stats">
+          <div class="stat-item">
+            <span class="stat-number">{{ total }}+</span>
+            <span class="stat-label">在售书籍</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">注册用户</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">成功交易</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- 主内容区 -->
     <main class="main container">
@@ -325,6 +354,72 @@ onMounted(() => {
   font-size: 16px;
   font-weight: bold;
   color: #f56c6c;
+}
+
+.banner {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 20px;
+  margin-bottom: 30px;
+}
+
+.banner-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-text h1 {
+  font-size: 42px;
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+}
+
+.banner-text h2 {
+  font-size: 28px;
+  color: rgba(255,255,255,0.9);
+  margin: 0 0 15px 0;
+  font-weight: 500;
+}
+
+.banner-text p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.8);
+  margin: 0 0 25px 0;
+}
+
+.banner-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.banner-actions .el-button {
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+.banner-stats {
+  display: flex;
+  gap: 40px;
+}
+
+.stat-item {
+  text-align: center;
+  color: #fff;
+}
+
+.stat-number {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
 }
 
 .pagination {
