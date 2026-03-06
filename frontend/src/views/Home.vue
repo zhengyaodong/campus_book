@@ -64,7 +64,7 @@
       <div class="banner-content">
         <div class="banner-text">
           <h1>广州软件学院</h1>
-          <h2>校园二手交易平台</h2>
+          <h2>校园二手书交易平台</h2>
           <p>让闲置书籍找到新主人，让校园生活更环保</p>
           <div class="banner-actions">
             <el-button type="primary" size="large" @click="$router.push('/publish')">发布书籍</el-button>
