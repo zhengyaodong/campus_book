@@ -147,7 +147,6 @@ const total = ref(0)
 const loading = ref(false)
 
 const categories = [
-  { label: '全部', value: '' },
   { label: '教材类', value: '教材类' },
   { label: '考研资料', value: '考研资料' },
   { label: '课外阅读', value: '课外阅读' },
