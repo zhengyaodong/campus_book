@@ -1,11 +1,5 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vue",
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "https://campus-book-api.vercel.app/:path*"
-    }
-  ]
+  "framework": "vue"
 }
